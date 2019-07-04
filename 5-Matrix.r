@@ -1,5 +1,5 @@
 # Matrix - A matrix is similar type of structure like Array
-# main is that Matrix must be 2D.
+# main difference isthat Matrix must be 2D.
 
 heros <- c("Thor", "Hulk", "Ironman", "Spiderman", "Captain America", "Black Panther", "Superman", "Dr Strange", "Batman")
 m <- matrix(heros, nrow = 3, ncol = 3)
