@@ -19,3 +19,23 @@ print(favsong$name)
 #accessing multiple attrs
 print(favsong[c(1,3)])
 print(favsong[c('name','len')])
+
+
+# Adding a new element in list
+favsong['singer'] <- "Taylor Swift"
+print(favsong$singer)
+
+# Re-assignment or update value 
+favsong['singer'] <- "Alan Walker"
+print(favsong$singer)
+
+# Removing an element from list
+favsong['singer'] <- NULL
+print(favsong)
+
+# Concatenating lists
+list1 <- list(name="ankit", original=F)
+list2 <- list(oname="bhupendra", ooriginal=T)
+
+list3 <- c(list1, list2)
+list3
