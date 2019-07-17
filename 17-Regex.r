@@ -7,3 +7,4 @@ gsub("@.*", "@example.com" ,c("singh@example.com", "test @gmai.com", "a common m
 
 matches <- regexpr("@.*", c("singh@example.com", "test @gmai.com", "a common man", "facebook.com"))
 regmatches(c("singh@example.com", "test @gmai.com", "a common man", "facebook.com"), matches)
+

@@ -1,49 +1,3 @@
-# Conditions & Loops
-
-year <- 2002
-
-if(year > 2000){
-  print("Yes, it's correct")
-}
-
-if(year > 2030){
-  print("Yes, it's correct")
-}else{
-  print("You're wrong")
-}
-
-# Logical operators
-
-# <  2000 < 2019
-# >  2000 > 1999
-# <= 2000 <= 2000
-# >= 2000 >= 1999
-# =  x = 6
-# ==  5 == 5
-# !  6 != 9
-# &  (5 == 5) & (T == TRUE)
-# |  ("test" == "test") | (T == FALSE)
-# %in% 5 %in% c(3:8)
-
-# to download a file
-download.file(url="https://ibm.box.com/shared/static/n5ay5qadfe7e1nnsv5s01oe1x62mq51j.csv", destfile = "movies.csv")
-
-# to read a csv file
-movies <- read.csv("movies.csv")
-
-# Getting subset of movies
-type <- "adult"
-
-if(type == "adult"){
-  submov <- subset(movies, year >= 2014 & age_restriction < 16)  
-}else{
-  submov <- subset(movies)
-}
-
-print(submov)
-
-
-
 # Loops 
 
 years <- c(1989, 2099, 1099, 2012)
@@ -86,4 +40,40 @@ while (iteration <= 5) {
   # And then, we increase the "iteration" value -- so that we actually reach our stopping condition
   # Be careful of infinite while loops!
   iteration = iteration + 1
+}
+
+
+# Repeat Loop
+# it does not has exit condition like other loops. so we have to exit the loop by ourselves using break statement
+
+
+x <- 1
+
+repeat{
+  print(x)
+  x <- x + 1
+  
+  if(x == 4){
+    break
+  }
+}
+
+# Loop Control Statements
+# 1) break
+# 2) next
+
+num <- 1:5
+for (v in num){
+  if(v == 3){
+    break
+  }
+  print(v)
+}
+
+
+for (v in num){
+  if(v == 3){
+    next
+  }
+  print(v)
 }

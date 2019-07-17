@@ -127,3 +127,10 @@ print(is.na(i))
 # remvoing missing values
 print(i[!is.na(i)])
 
+
+x<-1; f<-2
+
+x+f
+
+
+22 -> age
